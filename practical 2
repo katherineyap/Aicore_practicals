@@ -1,1 +1,25 @@
+#task1: check if the two strings start with the same letter
+phrase1 = 'Clean Couch'
+phrase2 = 'Giant Table'
+
+list1 = [list(phrase1)]
+list2 = [list(phrase2)]
+
+if list1[0] in list2[0]:
+    print ('yes')
+
+else:
+    print ('no')
+
+
+#task2:return the strings with word reversed
+my_string1 = 'This is a short phrase'
+my_string2 = 'This is actually a significantly longer phrase than the previous one'
+
+#My idea here is to split the springs according to the word into a list. 
+list3 = [my_string1.split()]
+
+#Then, I use the reverse function to reverse the order of the list. However, the result came as 'none'
+print(list3.reverse())
+
 
