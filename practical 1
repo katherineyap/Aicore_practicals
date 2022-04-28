@@ -1,4 +1,7 @@
 
 usernames = ['apple', 'ben', 'charlie']
 
-
+print(type(usernames))
+print(len(usernames))
+print(type(usernames[0:]))
+print(len(usernames[-1:]))
