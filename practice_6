@@ -1,4 +1,4 @@
 
-list_1 = [0]*10
+list_1 = ('a','b')
 
-print(list_1)
+print(len(list_1)
