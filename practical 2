@@ -5,7 +5,7 @@ phrase2 = 'Giant Table'
 list1 = [list(phrase1)]
 list2 = [list(phrase2)]
 
-if list1[0] in list2[0]:
+if list1[0] == list2[0]:
     print ('yes')
 
 else:
