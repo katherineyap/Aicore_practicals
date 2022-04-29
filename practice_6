@@ -1,4 +1,8 @@
 
-list_1 = ('a','b')
+list_1 = [0]*10
 
-print(len(list_1)
+#turn list into set
+new_set = set(list_1)
+
+#as set does not allow duplicate, the length of this set is only 1
+print(len(new_set))
