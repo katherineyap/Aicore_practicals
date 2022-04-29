@@ -1,0 +1,14 @@
+
+name = ["mike" , "katherine"]
+
+#turn list into string
+name_str =''.join(name)
+print(name_str)
+
+#slice into two strings
+name_1 = name_str[0:4]
+name_2 = name_str[4:]
+
+for character in name_1:
+   if character in name_2 :
+       print(character)
