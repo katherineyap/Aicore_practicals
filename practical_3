@@ -2,9 +2,18 @@
 number_plates = ["G06 WTR", "WL11 WFL", "QW68 PQR" ]
 
 #turn list into string 
-number_plates_str = '  '.join(number_plates)
+number_plates_str = ','.join(number_plates)
 print(number_plates_str)
 
-#extract the year character in sting 
+#extract the year character in string by slicing 
+a = number_plates_str[1:3] 
+b = number_plates_str[10:12]
+c = number_plates_str[19:22]
 
+a = int(a)
+b = int(b)
+c = int(c)
 
+print(type(a))
+print(type(b))
+print(type(c))
