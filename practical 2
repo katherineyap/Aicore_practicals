@@ -2,9 +2,11 @@
 phrase1 = 'Clean Couch'
 phrase2 = 'Giant Table'
 
+#turn string into list
 list1 = [list(phrase1)]
 list2 = [list(phrase2)]
 
+#index string with condition
 if list1[0] == list2[0]:
     print ('yes')
 
@@ -16,10 +18,11 @@ else:
 my_string1 = 'This is a short phrase'
 my_string2 = 'This is actually a significantly longer phrase than the previous one'
 
-#My idea here is to split the springs according to the word into a list. 
-list3 = [my_string1.split()]
+#My idea here is to split the strings according to the word into a list. 
+list3 = my_string1.split()
 
-#Then, I use the reverse function to reverse the order of the list. However, the result came as 'none'
-print(list3.reverse())
+#reverse strings. Three parameters,cannot put 0 in between because it is not inclusive and it eats up 'This'. 
+#The last parameter of -1 means in reverse order 
+reversed_list = list3[-1::-1]
 
-
+print(reversed_list)

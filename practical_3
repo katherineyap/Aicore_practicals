@@ -1,0 +1,10 @@
+
+number_plates = ["G06 WTR", "WL11 WFL", "QW68 PQR" ]
+
+#turn list into string 
+number_plates_str = '  '.join(number_plates)
+print(number_plates_str)
+
+#extract the year character in sting 
+
+
