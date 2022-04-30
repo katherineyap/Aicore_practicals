@@ -1,0 +1,18 @@
+
+a = 99 > 5
+print(a)
+
+b = 0 == False
+print (b)
+
+c = 1 == True
+print(c)
+
+d = 6.2 < 7
+print (d)
+
+e = 9 >= 9
+print (e)
+
+f = False < True
+print(f)
