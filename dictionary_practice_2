@@ -1,0 +1,4 @@
+
+ x = 10
+
+ n = float((input('Please insert your number:'))
