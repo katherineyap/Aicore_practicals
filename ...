@@ -1,0 +1,7 @@
+def cal(word):
+    from collections import Counter
+    character = Counter(word)
+    
+    return character 
+
+cal('Hello')
