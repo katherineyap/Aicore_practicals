@@ -1,0 +1,4 @@
+
+shop = {{'tomato': 18, 'sugar' : 2, 'ws':2, 'juice' : 4.5, 'foil' : 4}, 'prices':{'tomato': 0.87, 'sugar' : 1.09, 'ws':0.29, 'juice' : 1.90, 'foil' : 1.29 } , 'pack_sizes':{'tomato': 6, 'sugar' : 0.5, 'ws':10, 'juice' : 1.5, 'foil' : 0.30 }}
+prices = shop ['prices']
+print(prices)
