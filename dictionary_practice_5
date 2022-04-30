@@ -1,0 +1,8 @@
+a = 'AAA' > 'BBB' 
+print(a)
+
+b = 'AAB' > 'AAA'
+print(b)
+
+c = 'aaa' > 'AAA'
+print (c)
