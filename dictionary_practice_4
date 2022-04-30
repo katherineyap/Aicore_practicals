@@ -1,0 +1,26 @@
+
+a = True
+b = False 
+
+c = a or b
+print (c)
+
+d = a and b
+print (d)
+
+d_not = not d
+
+xor = c and d_not
+print (xor)
+
+#try to write in one line
+def main(a,b):
+    print ((a or b), (a and b),((a or b) and not(a and b)))
+
+main(True, False)
+
+
+
+
+
+
