@@ -1,4 +1,9 @@
 
- x = 10
+x = 10
 
- n = float((input('Please insert your number:'))
+n = int(input('Please insert your number:'))
+if n >= x:
+    print (n, "is greater than", x)
+
+else:
+    print (n, " is smaller than" , x)
