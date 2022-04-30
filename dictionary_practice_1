@@ -1,3 +1,15 @@
+
 one_deep_dictionary = {'start here':1,'k1':[1,2,3,{'k2':[1,2,{'k3':['keep going',{'further':[1,2,3,4,[{'k4':'Python'}]]}]}]}]}
 
-print(one_deep_dictionary['k1']['k2']['k3']['k4])
+index_1 = one_deep_dictionary['k1']
+
+index_2 = index_1[3]
+index_3 = index_2['k2']
+index_4 = index_3[2]
+index_5 = index_4['k3']
+index_6 = index_5[1]
+index_7 = index_6['further']
+index_8 = index_7[4]
+final_answer = index_8[0]
+
+print(final_answer['k4'])
