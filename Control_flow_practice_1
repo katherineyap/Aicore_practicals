@@ -1,3 +1,7 @@
 
 height = float(input('Please enter your height'))
 weight = float (input('Please enter your weight'))
+
+BMI = weight/(height*2)
+
+if 
