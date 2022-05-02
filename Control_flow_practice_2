@@ -1,0 +1,11 @@
+
+altitude = int(input("Please insert flight altitude"))
+airspeed = int(input("Please insert flight airspeed"))
+
+if 101 < altitude < 49999 and 61 < airspeed < 499:
+    print ("The flight is in the safe range")
+else:
+    print ("You are flying unsafe!")
+
+
+
