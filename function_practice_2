@@ -1,0 +1,36 @@
+
+
+invalidchar = ['!','£', '$', '%', '^', '&', '*' ,'()','@']
+
+
+
+def namecheck():
+    name = str(input('Please insert your name'))
+    if any(element in invalidchar for element in name):
+            print ("""Invalid Name! Name should not contain invalid character.
+                        Please re-enter""") 
+    else:
+            print ('Hi!' + name )
+
+def emailcheck():
+    email = str(input('Please insert your email'))
+    if "@" in email:
+            print ('Valid email')
+    else:
+            print ('Invalid email, please re-enter')
+
+def agecheck():
+    age = int(input('Please insert your age'))
+    if age < 12:
+        print ("I'm sorry but you are too young for this")
+    else:
+        print ('welcome!')
+   
+
+def user():
+       namecheck()
+       emailcheck()
+       agecheck()
+    
+user()
+
