@@ -1,0 +1,19 @@
+
+Dic_a = {'Name': 'Katherine', 'Skills':['Computing','Swimming']}
+Dic_b = {'Name': 'Yap', 'Skills': ['Reading', 'Hiking']}
+
+Dic_a.keys()
+
+name_list = []
+skill_list = []
+
+for key in Dic_a.keys():
+    name_list.append(key)
+    skill_list.append(Dic_a[key])
+#print(name_list)
+#print(skill_list[1])
+
+letter_str = ' '.join(skill_list[1])
+print(letter_str)
+
+    

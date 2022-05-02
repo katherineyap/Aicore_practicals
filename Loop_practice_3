@@ -1,0 +1,11 @@
+
+palindrome = input("Please insert your word.")
+
+reversed = palindrome[::-1]
+
+if palindrome == reversed:
+    print ('True')
+else:
+    print ('False')
+
+

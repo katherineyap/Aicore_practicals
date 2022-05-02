@@ -1,13 +1,13 @@
 
 def recursive(n):
-    while (n > 1):
-        y = n * recursive (n-1)
-        print(y)
+    if n > 1 :
+        return n * recursive (n-1)
     else:
-        y = 0
-    return y 
-        
-recursive(0)
+        return 1
+
+if __name__ == "__main__":
+
+    print(recursive(4))
 
 
 
