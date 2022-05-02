@@ -1,7 +1,16 @@
 
-height = float(input('Please enter your height'))
-weight = float (input('Please enter your weight'))
+height = float(input('Please enter your height in m'))
+weight = float (input('Please enter your weight in kg'))
 
-BMI = weight/(height*2)
+BMI = (weight/(height**2))
+x = str(BMI)
 
-if 
+if BMI < 18.5:
+    print ("Your BMI is" + x + ". You're in the underweight range")
+if 18.5 < BMI < 24.9:
+    print ("Your BMI is" + x + ". You're in the healthy range")
+if 25 < BMI < 29.9:
+    print ("Your BMI is" + x + ". You're in the overweight range")
+if 30 < BMI < 39.9:
+    print ("Your BMI is" + x + ". You're in the obese range")
+
