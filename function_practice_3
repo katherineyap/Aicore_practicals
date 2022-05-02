@@ -1,13 +1,13 @@
 
 def recursive(n):
-    if (n > 1):
+    while (n > 1):
         y = n * recursive (n-1)
         print(y)
     else:
-        y = 1
-        return y 
+        y = 0
+    return y 
         
-recursive(3)
+recursive(0)
 
 
 
