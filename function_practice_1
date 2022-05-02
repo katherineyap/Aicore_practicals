@@ -1,0 +1,16 @@
+def in_range():
+    while True:
+        lower_bound = input ("please enter a lower bound number")
+        upper_bound = input ("please enter a upper bound number")
+        number = input("please enter your number")
+        
+        if lower_bound < number < upper_bound:
+            print (number + " " + "is between" + " "+ lower_bound + " and " + upper_bound)
+
+        else:
+            print (number + " " + "is not between" + " " +lower_bound + " and " + upper_bound)
+        break
+
+
+in_range()
+
