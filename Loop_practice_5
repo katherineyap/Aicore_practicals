@@ -1,0 +1,12 @@
+
+shop_dict = {"tom":0.87, "sug":1.09, "ws":0.29, "cc":1.89, "ccz":1.29}
+names_dict = {"tom":"Tomatoes", "sug":"Sugar", "ws":"Washing Sponges", "cc":"Coca-Cola", "ccz":"Coca-Cola Zero"}
+
+#create a list to hold the key/value you looped that met the conditions
+shoplist = []
+for key,value in shop_dict.items():
+    if value >1.00:
+        shoplist.append([key,value])
+
+print(shoplist)
+
