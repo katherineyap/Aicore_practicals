@@ -1,13 +1,11 @@
 
 def recursive(n):
     if n > 1 :
-        return n * recursive (n-1)
+        return n * recursive (n-1) # remember to always 'return' a value in a function. (print)is just for users to see, but it does not input the value into a function 
     else:
         return 1
 
-if __name__ == "__main__":
-
-    print(recursive(4))
+print(recursive(4))
 
 
 
