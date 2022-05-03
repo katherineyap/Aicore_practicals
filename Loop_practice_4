@@ -9,4 +9,6 @@ list_b = list(Dic_b.items())
 #combine two lists
 final_list = list_a + list_b
 
-
+#finding first skill of last dictionary 
+skill = final_list[3]
+print(skill) #and so I got skills, [reading,hiking] but idk how to get loop for the letter 
