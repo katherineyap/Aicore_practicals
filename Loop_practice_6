@@ -1,0 +1,12 @@
+
+n = 5
+
+for row in range(n):
+    for column in range(row):
+        print(row, end = '')
+    print('\r')
+
+for row in range(n, 0, -1):
+    for column in range(row):
+        print(row, end = '')
+    print('\r')
