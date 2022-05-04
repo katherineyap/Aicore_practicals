@@ -1,32 +1,12 @@
-
-from re import L
-
-
 shop_dict = {"tom":0.87, "sug":1.09, "ws":0.29, "cc":1.89, "ccz":1.29}
 names_dict = {"tom":"Tomatoes", "sug":"Sugar", "ws":"Washing Sponges", "cc":"Coca-Cola", "ccz":"Coca-Cola Zero"}
 
-#create a list to hold the key/value you looped that met the conditions
-shoplist = []
+filtered_shop = []
+
 for key,value in shop_dict.items():
-    if value >1.00:
-        shoplist.append([key,value])
+    if value > 1.00:
+        filtered_shop.append(names_dict[key])
 
-print(shoplist)
-
-
-names_list = list(zip(names_dict.keys(),names_dict.values()))
-print(names_list)
-
-newlist =[]
-for str in shoplist:
-    for word in names_list:
-        if str == word:
-            newlist.append([str])
-
-print(newlist)
-    
-
-#shop_list = list(zip(shop_dict.keys(),shop_dict.values()))
-
-
-#print(list(zip(shop_list,names_list)))
+#Dictionary comprehension syntax 
+filered_sho = {names_dict[key] for key, v in shop_dict.items() if v > 1.0}
+print(filered_sho)
