@@ -4,8 +4,20 @@ names = {"tom":"Tomatoes", "sug":"Sugar", "ws":"Washing Sponges", "juc":"Juice",
 budget = 10.00
 running_total = 0
 
+receipt = []
 
-unzipped_list =list(zip(*order_list))
-receipt = [unzipped_list[0]]
+for items in order_list:
+    print ('current total: £ {}'.format(running_total))
+    if items[1]*items[-1] > budget:
+        print ('Budget Exceeded!')
+    else:
+        print ('Adding'+ names[items[0]]+ str(items[-1]))
+        budget = budget - items[1]*items[-1]
+        running_total = running_total + items[1]*items[-1]
+        receipt.append(names[items[0]])
+    
+print(receipt)
+        
+
 
 
