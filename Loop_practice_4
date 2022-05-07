@@ -2,17 +2,21 @@
 dic_a = {'Name': 'Katherine', 'Skills':['Computing','Swimming']}
 dic_b = {'Name': 'Yap', 'Skills': ['Reading', 'Hiking']}
 
-#turn both dictionaries into lists
-list_a = list(dic_a.items())
-list_b = list(dic_b.items())
 
-#combine two lists
-final_list = list_a + list_b
+value_in_list = list(dic_a.values()) + list(dic_b.values())
+print(value_in_list)
 
-#finding first skill of last dictionary 
-skill = final_list[3]
-#print(skill) #and so I got skills, [reading,hiking] but idk how to get loop for the letter 
+skill = value_in_list[-1] #skill from the last dictionary
+myskill = skill[0] #first skill
+last_letter = myskill[-1] #last letter in the first skill
+print(last_letter)
 
-skill =[]
-for i in range(len(final_list)):
-    skill 
+
+name_list = value_in_list[0:-1:2]
+
+name_length = [len(char) for char in name_list]
+total_character = sum(name_length)
+print(total_character)
+
+
+
