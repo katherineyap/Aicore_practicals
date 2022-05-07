@@ -1,0 +1,5 @@
+
+def inverse(word):
+    print("Your inverse word is:",word[::-1].format(word))
+
+inverse('yap')
