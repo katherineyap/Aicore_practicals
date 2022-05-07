@@ -1,0 +1,9 @@
+
+for x in range (10,51):
+    if (x%2 != 0):
+        print({x}, 'is a prime number'.format(x))
+    else:
+        for y in range(x,x+1):
+            if (x%y)==0:
+                print({x},'is NOT a prime number because',{y},'is a factor'.format(x,y))
+
