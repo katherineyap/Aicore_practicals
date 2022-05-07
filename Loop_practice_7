@@ -1,0 +1,11 @@
+order_list = [("tom", 0.87, 4), ("sug", 1.09, 3), ("ws", 0.29, 4), ("juc", 1.89, 1), ("fo", 1.29, 2)]
+names = {"tom":"Tomatoes", "sug":"Sugar", "ws":"Washing Sponges", "juc":"Juice", "fo":"Foil"}
+
+budget = 10.00
+running_total = 0
+
+
+unzipped_list =list(zip(*order_list))
+receipt = [unzipped_list[0]]
+
+
