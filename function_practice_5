@@ -1,0 +1,14 @@
+
+dic_a = {'materials':'cotton', 'size':6, 'colour':'pink'}
+
+def func(attributes_to_print):
+    for k,v in dic_a.items():
+        for a in attributes_to_print:
+            if a == k:
+                print('the key-value pairs are',format(k),'+', format(v))
+                break
+            else:
+                print ('the key does not exist')
+
+list = ['size',8]
+func(list)
