@@ -10,12 +10,14 @@ class Cylinder:
     def get_surface_area (self):
         import math
         pi = math.pi 
-        return round(2* pi*self.radius*(self.radius + self.height),2)
+        self.surface_area = round(2* pi*self.radius*(self.radius + self.height),2)
+        return self.surface_area
     
     def get_volume(self):
         import math
         pi = math.pi 
-        return round(pi*self.height*(self.radius**2),2)
+        self.volume =round(pi*self.height*(self.radius**2),2)
+        return self.volume
     
 c_1 = Cylinder (5)
 print(Cylinder.get_surface_area(c_1))

@@ -1,0 +1,30 @@
+
+from unittest import TestLoader
+
+
+class Car:
+
+    def __init__(self, model, year=2022):
+        self.model = model
+        self.year = year
+        self.miles_driven = 0
+  
+    def drive (self):
+        print ('vroom')
+        self.miles_driven += 1
+        return self.miles_driven
+
+    def info(self):
+        return (self.miles_driven, self.model, self.year)
+        
+    
+car_1 = Car('tesla')
+car_2 = Car('Ferrari')
+print(Car.drive(car_1))
+print(Car.drive(car_2))
+print(Car.info(car_1))
+print(Car.info(car_2))
+
+
+
+
