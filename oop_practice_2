@@ -21,6 +21,8 @@ class Car:
 car_1 = Car('tesla')
 car_2 = Car('Ferrari')
 print(Car.drive(car_1))
+print(Car.drive(car_1))
+print(Car.drive(car_1))
 print(Car.drive(car_2))
 print(Car.info(car_1))
 print(Car.info(car_2))
