@@ -1,0 +1,22 @@
+
+class Cylinder:
+
+    def __init__(self,height,radius=1):
+        self.height = height
+        self.radius = radius
+        self.surface_area = 0
+        self.volume = 0
+    
+    def get_surface_area (self):
+        import math
+        pi = math.pi 
+        return round(2* pi*self.radius*(self.radius + self.height),2)
+    
+    def get_volume(self):
+        import math
+        pi = math.pi 
+        return round(pi*self.height*(self.radius**2),2)
+    
+c_1 = Cylinder (5)
+print(Cylinder.get_surface_area(c_1))
+print(Cylinder.get_volume(c_1))
