@@ -10,5 +10,5 @@ def func(attributes_to_print):
             else:
                 print ('the key does not exist')
 
-list = ['size',8]
-func(list)
+attributes = ['size',8]
+func(attributes)
