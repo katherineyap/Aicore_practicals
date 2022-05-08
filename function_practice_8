@@ -1,0 +1,25 @@
+
+def fibonnaci(n):
+    if n in {0,1}:
+        return n
+    return fibonnaci(n-1)+fibonnaci(n-2)
+
+preceding_numbers = [fibonnaci(n) for n in range(5)]
+
+def check(x):
+    if x >= 100:
+        print (x,'is larger than 100'.format(x))
+    if x < 50:
+        print (x,'is less than 50'.format(x))
+
+def test(preceding_numbers):
+    for num in preceding_numbers:
+        check(num)
+        if num % 7 == 0:
+            print ('True')
+        else:
+            print ('False')
+
+test(preceding_numbers)
+
+
