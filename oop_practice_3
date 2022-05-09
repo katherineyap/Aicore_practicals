@@ -1,0 +1,28 @@
+from datetime import date
+
+class Person:
+    def __init__(self, name, birthday, friends=None):
+        self.name = name 
+        self.friends = friends or []
+        self.birthday = birthday
+    
+    def __str__(self):
+        return '{},{},{}'.format(self.name, self.birthday, self.friends)
+
+
+    def __gt__ (self,other):
+        today = date.today()
+        return (today.year - self.birthday.year) > (today.year - other.birthday.year)
+
+    def add_friend (self,other):
+        if other.name not in self.friends:
+            self.friends.append(other.name)
+
+
+
+a = Person('Kiki', date(1996,6,25),['Jack,Rose'])
+b = Person('Lola', date(2000,5,25),'Ed')
+
+a.add_friend(b)
+
+print(a.friends)
