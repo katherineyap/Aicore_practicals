@@ -14,14 +14,15 @@ class Person:
         return (today.year - self.birthday.year) > (today.year - other.birthday.year)
 
     def add_friend (self,other):
-        if other.name not in self.friends:
-            self.friends.append(other.name)
+        if other.friends not in self.friends:
+            self.friends.append(other.friends)
 
 
 
 a = Person('Kiki', date(1996,6,25),['Jack,Rose'])
-b = Person('Lola', date(2000,5,25),'Ed')
+b = Person('Lola', date(2000,5,25),'ed')
 
-a.add_friend(self)
-
+print(str(a))
+print (a>b)
+a.add_friend(b)
 print(a.friends)
