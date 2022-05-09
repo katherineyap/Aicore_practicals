@@ -9,7 +9,6 @@ class Person:
     def __str__(self):
         return '{},{},{}'.format(self.name, self.birthday, self.friends)
 
-
     def __gt__ (self,other):
         today = date.today()
         return (today.year - self.birthday.year) > (today.year - other.birthday.year)
@@ -23,6 +22,6 @@ class Person:
 a = Person('Kiki', date(1996,6,25),['Jack,Rose'])
 b = Person('Lola', date(2000,5,25),'Ed')
 
-a.add_friend(b)
+a.add_friend(self)
 
 print(a.friends)
