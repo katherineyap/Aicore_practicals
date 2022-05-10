@@ -1,0 +1,27 @@
+
+class Shape:
+
+    def __init__(self, num_sides,tesselates=None):
+        self.num_sides = num_sides
+        if self.num_sides <= 0:
+            print ("error")
+        self.tesselates = tesselates
+    
+    def get_info(self):
+        return ("NotImplementedError")
+
+class Circle(Shape):
+    def __init__(self,num_sides, tesselates):
+        super().__init__(num_sides,tesselates)
+    
+    def get_info(self):
+        return (f"'The number of side is:' {self.num_sides} 'its tesselates status:{self.tesselates}")
+
+
+class Triangle(Shape):
+    def __init__(self,num_sides, tesselates):
+        super().__init__(num_sides,tesselates)
+    
+    def get_info(self):
+        return (f"'The number of side is:' {self.num_sides} 'its tesselates status:{self.tesselates}")
+
