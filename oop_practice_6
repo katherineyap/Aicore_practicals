@@ -1,0 +1,13 @@
+import random
+
+wordlist = ['Python','Java','Swift']
+
+class RandomWord:
+    
+    def __init__(self,word):
+        self.word = random.choice(wordlist)
+
+    def display (self, guessed_letter):
+        for char in self.word:
+            if char in guessed_letter:
+                
