@@ -1,0 +1,20 @@
+
+from operator import add
+
+
+class Vector:
+
+    def __init__(self,nums):
+        self.nums = nums or []
+
+    
+    def __repr__(self):
+        return f"{self.nums}"
+
+    def __add__(self, other):
+        return self.nums+other.nums
+
+
+a = Vector([5,12,13])
+b = Vector(1)
+print(add(a.nums, b.nums))
