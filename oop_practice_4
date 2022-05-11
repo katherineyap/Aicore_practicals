@@ -1,20 +1,24 @@
 
-from operator import add
-
-
 class Vector:
 
-    def __init__(self,nums):
-        self.nums = nums or []
-
+    def __init__(self,num_1):
+        self.num_1 = num_1 or []
     
     def __repr__(self):
-        return f"{self.nums}"
+        return f"{self.num_1}"
 
-    def __add__(self, other):
+    def __add__(self,other ):
         return self.nums+other.nums
+    
+    #how to index an item in class 
+    def __index__(self):
+        return self.num_1
 
 
 a = Vector([5,12,13])
-b = Vector(1)
-print(add(a.nums, b.nums))
+b = Vector([1,3,5])
+
+#add two vectors tgt 
+sum = b.num_1[0] + a.num_1[0]
+b.num_1[0] > a.num_1[0]
+

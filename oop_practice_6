@@ -1,13 +1,26 @@
-import random
 
-wordlist = ['Python','Java','Swift']
+# import random
 
-class RandomWord:
+
+# wordlist = ['Python','Java','Swift']
+
+# class RandomWord:
     
-    def __init__(self,word):
-        self.word = random.choice(wordlist)
+#     def __init__(self,word):
+#         self.word = random.choice(wordlist)
 
-    def display (self, guessed_letter):
-        for char in self.word:
-            if char in guessed_letter:
-                
+#     def display (self, guessed_letter):
+#         word_to_display  = " "
+
+#         for char in self.word:
+#             if char in guessed_letter:
+#                 word_to_display += char
+#             else:
+#                 word_display += " _ "
+#             print ("This is your word so far:", word_to_display)
+#             return word_to_display  
+
+
+# class Game:
+
+#     def __init(self,)
