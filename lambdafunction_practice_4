@@ -13,3 +13,5 @@ gen = inf_gen()
 next(gen)
 
 
+#generator comprehension 
+gen = (x%2 for x in range(10))
