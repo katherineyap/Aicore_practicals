@@ -1,0 +1,41 @@
+import functools
+from inspect import ArgSpec
+import time
+
+
+def decorator (func):
+    @functools.wraps(func)
+    def wrapper_decorator(*args,**kwargs):
+        print("Let's start calling the function")
+        func(*args,**kwargs)
+        print ('Function call ends')
+    return wrapper_decorator 
+
+def measure_time(func):
+    @functools.wraps(func)
+    def wrapper_timer(*args, **kwargs):
+        start_time = time.perf_counter()
+        print ('hi')
+        func(*args,**kwargs)
+        print ('bye')
+        end_time = time.perf_counter()
+        run_time = end_time - start_time
+        print (f"Finished {func.__name__} in {run_time:.4f} secs")
+    return wrapper_timer
+
+
+
+def decorator_two (func, word_1, word_2):
+    print (f"This is the {word_1}")
+    func()
+    print (f"This is the {word_2}")
+    return decorator_two
+
+
+@measure_time
+@decorator
+def simple_func ():
+    for i in range(3):
+        print(i)
+
+decorator_two(simple_func,'Hello','Bye')
