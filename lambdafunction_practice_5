@@ -1,0 +1,17 @@
+import datetime
+import functools
+
+
+a = ['manager', '2000-01-01','2022-01-01']
+b = {'job_title': 'director', 'start_date': '2000-01-01','finish_date':'2022-01-01'}
+
+def job (job_title, start_date, finish_date):
+    print (job_title, start_date, finish_date)
+
+job(*a)
+job(**b)
+
+def decorator(func,job_title):
+    print (f'{func},{job_title}')
+
+sdecorator(job(*a),'boss')
