@@ -1,0 +1,38 @@
+
+#Q1
+from curses import keyname
+
+
+input = ['Hello', 'world']
+
+# def capitalised (l):
+#     return [i.upper() for i in l]
+
+# print(capitalised(input))
+
+capitalised = [s.upper() for s in input]
+x = capitalised
+print(x)
+
+#Q2
+sequence = range(100)
+num = filter(lambda x: x%5 == 0, sequence)
+print(list(num))
+
+
+#Q3
+nums = range(16)
+new_dic = {}
+
+for i in nums:
+    new_dic[i] = i**2
+
+newdic =list(map(lambda i: i**2, nums))
+print(newdic)
+
+
+#Q4
+import math
+inversedic = list(map(lambda n : int(math.sqrt(n)),newdic))
+print(inversedic)
+
