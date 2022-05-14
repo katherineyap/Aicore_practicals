@@ -1,0 +1,7 @@
+
+def gen(input):
+    for i in range(input):
+        yield i, bin(i).replace("0b","") #remove the prefix(0b)
+
+binary = (bin(i).replace("0b","") for i in range(256))
+print(next(binary))
