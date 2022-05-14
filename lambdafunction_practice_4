@@ -1,0 +1,15 @@
+
+def inf_gen():
+    i = 0
+    while True:
+        if i % 2 == 0:
+            yield True
+            i+=1
+        else:
+            yield False
+            i+=1
+
+gen = inf_gen()
+next(gen)
+next(gen)
+
