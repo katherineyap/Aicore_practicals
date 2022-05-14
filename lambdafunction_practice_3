@@ -24,9 +24,15 @@ print(list(num))
 nums = range(16)
 new_dic = {}
 
+#loop
 for i in nums:
     new_dic[i] = i**2
 
+#dictionary comprehensive
+newdic_1 = {v:v**2 for v in nums}
+print(newdic_1)
+
+#lambda
 newdic =list(map(lambda i: i**2, nums))
 print(newdic)
 

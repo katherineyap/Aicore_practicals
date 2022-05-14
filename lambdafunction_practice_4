@@ -11,5 +11,5 @@ def inf_gen():
 
 gen = inf_gen()
 next(gen)
-next(gen)
+
 
